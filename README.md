@@ -5,7 +5,7 @@ A dark Discord-inspired theme for Rocket.Chat, customized for hgvmp.com
 ### WARNING
 Our theme set the usernames color inside messages to their respective role color, just like Discord...
 
-*Before proceeding with the installation, you must make sure you don't have any Role with spaces in the "Role" field. Using this theme you will be able to use spaces only in the "Description" field.*
+**_Before proceeding with the installation, you must make sure you don't have any Role with spaces in the "Role" field. Using this theme you will be able to use spaces only in the "Description" field._**
 
 ### Manual install
 1. Copy the contents of `dist/custom.css` or `dist/custom.min.css`
@@ -23,7 +23,7 @@ Our theme set the usernames color inside messages to their respective role color
 2. `npm run deploy`
 
 ### Custom additions
-We're using a customized version of 0x1234 theme. You will find the source code of the theme inside `/src`, all our CSS customization made over 0x1234 theme is located inside `src/custom.styl`.
+We're using a customized version of [0x0049 Rocket.Chat.Dark theme](https://github.com/0x0049/Rocket.Chat.Dark). You will find the source code of the theme inside `/src`, all our CSS customization made over [0x1234 theme](https://github.com/0x0049/Rocket.Chat.Dark) is located inside `src/custom.styl`.
 
 ### App color settings
 All colors should be set to the defaults. I haven't tested with anything but
