@@ -38,27 +38,27 @@ background color this theme uses (recommended).
 To set a role color you must add some code into `/src/custom.styl`. 
 
 Write the following inside `custom.styl` after the line `// Roles`:
-```
+```css
 // Roles
 .role-MyRoleName {
-	color: yellow !important;
+  color: yellow !important;
 }
 ```
 
 Replace `MyRoleName` with your role name, and set the color you want to use. In this example, I will set the color of the role `bot` and `ProjectManager`:
-```
+```css
 // Roles
 .role-bot {
-	color: yellow !important;
+  color: yellow !important;
 }
 
 .role-ProjectManager {
-	color: #32fcbe !important;
+  color: #32fcbe !important;
 }
 ```
 
 By default, the following roles are ignored:
-```
+```javascript
 const ignoredRoles = [
   "user",
   "admin",
@@ -81,7 +81,7 @@ Feel free to modify the ignored roles inside the JS files located in `/src/js`.
 If you want to minify the CSS code, after building/deploying, open `/lib/deploy.json` and set `minify` to `true`. 
 
 deploy.json example:
-```
+```json
 {
   "authToken": "x-xxxxxxxxxxx-xxxxxxxxxxxxx-",
   "userId": "xxxxxxxxxxxxxx",
