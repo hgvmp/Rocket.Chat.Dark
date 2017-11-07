@@ -23,7 +23,6 @@
 sidebar-bg = #2F3236
 sidebar-account-bg = #2A2D31
 sidebar-footer-bg = sidebar-bg
-header-bg = sidebar-account-bg
 
 content-background-color = #36393E
 color-primary-font-color = #AFB3BA
@@ -49,6 +48,12 @@ color-primary-font-color = #AFB3BA
 	}
 }
 
+.toolbar .rc-input__element,
+.toolbar .rc-button {
+	border: 0 !important;
+	background-color: sidebar-account-bg !important;
+}
+
 .rooms-list__toolbar-search {
 	background-color: sidebar-bg !important;
 }
@@ -61,9 +66,11 @@ color-primary-font-color = #AFB3BA
 .main-content {
 	// Header
 	header {
-		//border-bottom: 1px solid #26272B !important;
-		border-bottom: 0 !important;
-		background-color: header-bg !important;
+		border-bottom: 1px solid sidebar-account-bg !important;
+		//border-bottom: 0 !important;
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+		background-color: #36393F !important;
+		color: #fff !important;
 	}
 
 	// Message

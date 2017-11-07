@@ -1332,6 +1332,11 @@ form.inline select {
 .sidebar__account:hover {
   background-color: #3d4248 !important;
 }
+.toolbar .rc-input__element,
+.toolbar .rc-button {
+  border: 0 !important;
+  background-color: #2a2d31 !important;
+}
 .rooms-list__toolbar-search {
   background-color: #2f3236 !important;
 }
@@ -1339,8 +1344,10 @@ form.inline select {
   background-color: #2f3236 !important;
 }
 .main-content header {
-  border-bottom: 0 !important;
-  background-color: #2a2d31 !important;
+  border-bottom: 1px solid #2a2d31 !important;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+  background-color: #36393f !important;
+  color: #fff !important;
 }
 .main-content .message .info .is-bot,
 .main-content .message .info .role-tag {
