@@ -1,14 +1,14 @@
 {
   "name": "Rocket.Chat.Dark",
-  "version": "1.1.2",
-  "description": "A dark Discord-inspired theme for Rocket.Chat",
-  "author": "0x0049 <dev@0x0049.me> (https://www.0x0049.me)",
+  "version": "1.1.3",
+  "description": "A dark Discord-inspired theme for Rocket.Chat, customized for hgvmp.com",
+  "author": "0x0049 <dev@0x0049.me> (https://www.0x0049.me), Manu Valle <manu@estilate.com> (https://estilate.com), Shane R. Wilson <shane@synplex.co.uk> (https://synplex.co.uk)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/0x0049/Rocket.Chat.Dark"
+    "url": "https://github.com/hgvmp/Rocket.Chat.Dark"
   },
   "bugs": {
-    "url": "https://github.com/0x0049/Rocket.Chat.Dark/issues"
+    "url": "https://github.com/hgvmp/Rocket.Chat.Dark/issues"
   },
   "keywords": [
     "rocket",
@@ -16,14 +16,11 @@
     "rocket.chat",
     "rocketchat",
     "dark",
-    "theme"
+    "theme",
+    "discord",
+    "hgvmp"
   ],
   "dependencies": {
-    "gulp": "3.9.x",
-    "gulp-autoprefixer": "3.1.x",
-    "gulp-clean-css": "2.0.x",
-    "gulp-rename": "1.2.x",
-    "gulp-stylus": "2.5.x",
     "request": "2.79.x"
   },
   "scripts": {
@@ -35,5 +32,13 @@
     "postversion": "git push && git push --tags"
   },
   "analyze": true,
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "3.9.x",
+    "gulp-autoprefixer": "3.1.x",
+    "gulp-clean-css": "2.0.x",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "2.5.x",
+    "gulp-uglify": "^3.0.0"
+  }
 }

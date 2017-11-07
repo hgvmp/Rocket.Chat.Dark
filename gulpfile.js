@@ -10,9 +10,9 @@ var deploy = require('./lib/deploy.js');
 /**
  * Deploys the generated CSS file to Rocket.Chat.
  */
-gulp.task('deploy', ['dark', 'custom'], function (done) {
-	var file = fs.existsSync('src/custom.styl') ? 'custom.css' : 'dark.css';
-	deploy(__dirname + '/dist/' + file, function (error) {
+gulp.task('deploy', ['dark', 'jsFiles', 'custom'], function (done) {
+	var cssFile = fs.existsSync('src\\custom.styl') ? 'custom' : 'dark';
+	deploy(__dirname + '\\dist\\' + cssFile, __dirname + '\\dist\\logged_out', __dirname + '\\dist\\logged_in', function (error) {
 		done(error);
 		process.exit(); // TODO: Figure this out.
 	});
@@ -34,6 +34,14 @@ gulp.task('dark', function () {
 		.pipe(clean({
 			compatibility: 'ie8'
 		}))
+		.pipe(gulp.dest('dist'));
+});
+
+/**
+ * Generates the JS files that get committed.
+ */
+gulp.task('jsFiles', function () {
+	return gulp.src('src/js/*.js')
 		.pipe(gulp.dest('dist'));
 });
 

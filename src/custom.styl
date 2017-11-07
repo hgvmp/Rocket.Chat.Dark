@@ -1,0 +1,146 @@
+@import "dark.styl";
+	
+// Roles
+.role-bot {
+	color: yellow !important;
+}
+
+.role-ProjectManager {
+	color: #32fcbe !important;
+}
+
+.role-Developer {
+	color: #B36DBF !important;
+}
+
+.role-CommunityManager {
+	color: #76ff20 !important;
+}
+
+// Colors
+sidebar-bg = #2F3236
+sidebar-account-bg = #2A2D31
+sidebar-footer-bg = sidebar-bg
+header-bg = sidebar-account-bg
+
+content-background-color = #36393E
+color-primary-font-color = #AFB3BA
+
+.content-background-color {
+	background-color: content-background-color !important;
+}
+
+.color-primary-font-color {
+	color: color-primary-font-color !important;
+}
+
+// Left sidebar
+.sidebar {
+	background-color: sidebar-bg !important;
+}
+
+.sidebar__account {
+	background-color: sidebar-account-bg !important;
+
+	&:hover {
+		background-color: lighten(sidebar-account-bg, 10%) !important;
+	}
+}
+
+.rooms-list__toolbar-search {
+	background-color: sidebar-bg !important;
+}
+
+.sidebar__footer {
+	background-color: sidebar-footer-bg !important;
+}
+
+// Main content
+.main-content {
+	// Header
+	header {
+		//border-bottom: 1px solid #26272B !important;
+		border-bottom: 0 !important;
+		background-color: header-bg !important;
+	}
+
+	// Message
+	.message {
+		.info {
+			.is-bot,
+			.role-tag {
+				background-color: #7289da;
+				color: #fff;
+			}
+		
+			.role-tag {
+				margin-right: 6px;
+			}
+		}
+
+		&.editing .body {
+			background-color: transparent !important;
+			color: #bacad1 !important;
+		}
+	}
+
+	.user {
+		font-weight: 400 !important;  
+	}
+
+	.messages-box {
+		border-bottom: 1px solid #303337;
+		box-shadow: 0 1px 2px -1px #424449;
+	
+		.start {
+			color: #888;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 12px;
+			margin: 12px 0 13px 0;
+		}
+	}
+
+	.rc-message-box {
+		background-color: #36393e !important;
+		padding-top: 12px !important;
+	}
+
+	.rc-message-box__container {
+		background: #484B52 !important;
+		border: 2px solid #484B52 !important;
+	}
+
+	.rc-message-box__textarea {
+		color: white !important;
+	}
+
+	.rc-message-box__typing__user {
+		color: white !important;
+	}
+
+	.rc-button--square {
+		border: 0 !important;
+		background: transparent !important;
+	}
+
+	.rc-input__element--small {
+		border-top: 0 !important;
+		border-left: 0 !important;
+		border-right: 0 !important;
+		background: transparent !important;
+	}
+
+	span.badge {
+		margin-left: 8px; 
+	}
+
+	span.time {
+		color: rgba(255, 255, 255, .2) !important;
+	}
+}
+
+// Right sidebar
+.flex-tab-bar {
+	background: sidebar-account-bg !important;
+}
