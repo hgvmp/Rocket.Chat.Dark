@@ -71,4 +71,4 @@ gulp.task('watch', function () {
 	gulp.watch('src/dark*', ['dark']);
 });
 
-gulp.task('default', ['dark', 'custom']);
+gulp.task('default', ['dark', 'custom', 'jsFiles']);
