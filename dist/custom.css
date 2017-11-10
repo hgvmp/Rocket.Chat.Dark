@@ -1334,8 +1334,8 @@ form.inline select {
 }
 .toolbar .rc-input__element,
 .toolbar .rc-button {
-  border: 0 !important;
   background-color: #2a2d31 !important;
+  border: 0 !important;
 }
 .rooms-list__toolbar-search {
   background-color: #2f3236 !important;
@@ -1407,4 +1407,7 @@ form.inline select {
 }
 .flex-tab-bar {
   background: #2a2d31 !important;
+}
+.flex-tab .channel-settings .button {
+  visibility: visible;
 }
