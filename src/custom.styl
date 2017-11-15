@@ -158,3 +158,19 @@ color-primary-font-color = #AFB3BA
 	visibility: visible
 }
 
+// Unread messages
+.new-day.first-unread .body::before {
+    top: 7px !important;
+}
+
+/* .first-unread.first-unread-opaque .body::before {
+    background-color: #387791;
+} */
+
+.rc-old .first-unread .body::before, .rc-old .cozy .first-unread .body::before, .rc-old .compact .first-unread .body::before {
+    height: 3px !important;
+}
+
+.new-day.first-unread .body::after {
+    top: -10px !important;
+}
