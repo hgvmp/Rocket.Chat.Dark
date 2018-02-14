@@ -1,5 +1,7 @@
 A dark Discord-inspired theme for Rocket.Chat, customized for hgvmp.com
 
+## [ Inactive development ]
+
 ## Install
 
 ### WARNING
